@@ -1,0 +1,186 @@
+body{
+    background-color:#F3F7EC;
+    margin: 0px;;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1100px;
+    width: 100%;
+    background: url(./assets/images/background-imageii.jpg);
+    background-size: 100% 100%;
+}
+
+.name {
+   font-family: "Pacifico", cursive;
+    font-weight: 100;
+    font-style: normal;   
+  font-size: 12rem;
+  color: #F8EDED;
+}
+
+.name-description {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    font-size: 2.5em;
+    word-spacing: 2px;
+    text-align: center;
+    color: #173B45;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 90px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    margin-bottom: 30px;
+    height: 400px;
+    width: 400px;
+}
+
+.head-text {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 3.1rem;
+    color: #BED754;
+}
+
+#hello:hover {    
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.body-text {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2.3em;
+    color: #191919;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 100px;
+
+}
+
+.skills-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.skill-pictures {
+    float: left;
+    margin: 0px 15px 0px 60px;
+    text-align: center;
+}
+
+.skills-body-text {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.5em;
+    color: #173B45;
+}
+
+
+
+h3 {
+    font-family: "Poppins", sans-serif;
+  font-weight: 550;
+  font-style: normal;
+  font-size: 2rem;
+  color: #BED754;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.btn1 {
+    font-size: 2rem;
+    background-color: #E88D67;
+    color: white;
+}
+
+footer {
+    background-color: #F3F7EC;
+    height: 15vh;
+}
+
+
+@media (max-width: 550px) {
+    .skills-body-text {
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .skill-pictures {
+        float: none;
+    }
+
+    .profile-picture, .skill-pictures {
+        height: 200px;
+        width: 200px;
+    }
+
+    .body-text, .skills-body-text {
+        font-size: 1.2em;
+    }
+
+    .head-text, .skills-title {
+        font-size: 1.8em;
+    }
+}
+
+
+@media (max-width: 953px) {
+    .name {
+        font-size: 9rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 634px) {
+    .name {
+        font-size: 7rem;
+    }
+    .name-description{
+        font-size: 2rem;
+    }
+
+@media (max-width: 716px) {
+    .creative-thinking {
+        grid-column: span 2;
+    }
+    }
+}
